@@ -16,7 +16,7 @@ public class PopUp_Test extends Base_test
         PopUpPages.Alert_PopUp(driver).click();
         Thread.sleep(1000);
         driver.switchTo().alert().accept();
-        driver.get("https://practice-automation.com/");
+        //driver.get("https://practice-automation.com/");
 
     }
     @Test
@@ -28,7 +28,7 @@ public class PopUp_Test extends Base_test
         PopUpPages.Confirm_PopUp(driver).click();
         Thread.sleep(1000);
         driver.switchTo().alert().dismiss();
-        driver.get("https://practice-automation.com/");
+        //driver.get("https://practice-automation.com/");
 
     }
     @Test

@@ -28,8 +28,8 @@ public class Base_test
     public void Home_After() throws InterruptedException {
         Thread.sleep(1000);
         // driver.get("https://www.krafttopia.work/auth/sign-in");
-        driver.navigate().to("https://practice-automation.com/");
-       // driver.get("https://practice-automation.com/");
+        //driver.navigate().to("https://practice-automation.com/");
+       driver.get("https://practice-automation.com/");
         Thread.sleep(1000);
 
 
