@@ -49,6 +49,11 @@ public class FormFieldsPage
         WebElement Drink=driver.findElement(drink5);
         return Drink;
     }
+    static public WebElement Color(WebDriver driver)
+    {
+        WebElement Color=driver.findElement(color4);
+        return Color;
+    }
     static public WebElement Siblings(WebDriver driver)
     {
         WebElement Siblings=driver.findElement(siblings);
