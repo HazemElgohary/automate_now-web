@@ -93,6 +93,12 @@ public class BasePage
         scroll.executeScript("scroll(0,500)");
 
     }
+    public static void  Longscrolldown(WebDriver driver)
+    {
+        JavascriptExecutor scroll=(JavascriptExecutor)driver;
+        scroll.executeScript("scroll(0,800)");
+
+    }
     public static void  Smallscrollup(WebDriver driver)
     {
         JavascriptExecutor scroll=(JavascriptExecutor)driver;
