@@ -31,45 +31,54 @@ public class BasePage
     static By accordions_btn =By.xpath("");
 
 
-    static public WebElement JavaScriptDelays(WebDriver driver)
-    {
+    static public WebElement JavaScriptDelays(WebDriver driver) throws InterruptedException {
         WebElement JavaScriptDelays= driver.findElement(javascriptdelays_btn);
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", JavaScriptDelays);
+        Thread.sleep(500);
         return JavaScriptDelays;
     }
-    static public  WebElement FormFields(WebDriver driver)
-    {
+    static public  WebElement FormFields(WebDriver driver) throws InterruptedException {
         WebElement formfields=driver.findElement(formdields_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", formfields);
+        Thread.sleep(500);
         return formfields;
     }
-    static public  WebElement PopUp (WebDriver driver)
-    {
+    static public  WebElement PopUp (WebDriver driver) throws InterruptedException {
         WebElement Popup =driver.findElement(popup_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Popup);
+        Thread.sleep(500);
         return Popup;
     }
-    static public  WebElement Sliders (WebDriver driver)
-    {
+    static public  WebElement Sliders (WebDriver driver) throws InterruptedException {
         WebElement Sliders =driver.findElement(slider_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Sliders);
+        Thread.sleep(500);
         return Sliders;
     }
-    static public  WebElement Calenders (WebDriver driver)
-    {
+    static public  WebElement Calenders (WebDriver driver) throws InterruptedException {
         WebElement Calenders =driver.findElement(calender_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Calenders);
+        Thread.sleep(500);
         return Calenders;
     }
 
-    static public  WebElement Modals (WebDriver driver)
-    {
+    static public  WebElement Modals (WebDriver driver) throws InterruptedException {
         WebElement Modals=driver.findElement(modals_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Modals);
+        Thread.sleep(500);
         return Modals;
     }
-    static public  WebElement Tables(WebDriver driver)
-    {
+    static public  WebElement Tables(WebDriver driver) throws InterruptedException {
         WebElement Tables=driver.findElement(tables_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Tables);
+        Thread.sleep(500);
         return Tables ;
     }
-    static public  WebElement  Window_Operations(WebDriver driver)
-    {
+    static public  WebElement  Window_Operations(WebDriver driver) throws InterruptedException {
         WebElement Window_Operations=driver.findElement(windowperation_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Window_Operations);
+        Thread.sleep(500);
         return Window_Operations;
     }
     static public  WebElement Hover (WebDriver driver)
@@ -90,13 +99,15 @@ public class BasePage
     public static void  Smallscrolldown(WebDriver driver)
     {
         JavascriptExecutor scroll=(JavascriptExecutor)driver;
-        scroll.executeScript("scroll(0,500)");
+        scroll.executeScript("window.scrollTo(0, 500)");
+
 
     }
     public static void  Longscrolldown(WebDriver driver)
     {
         JavascriptExecutor scroll=(JavascriptExecutor)driver;
-        scroll.executeScript("scroll(0,800)");
+        scroll.executeScript("window.scrollTo(0, 800)");
+
 
     }
     public static void  Smallscrollup(WebDriver driver)
@@ -105,4 +116,45 @@ public class BasePage
         scroll.executeScript("scroll(700,0)");
 
     }
+///////////////////////////////////////////////////////////////////////////////////////////////
+    /*static public void  ScrollToJavaScriptDelays(WebDriver driver) throws InterruptedException {
+        WebElement JavaScriptDelays= driver.findElement(javascriptdelays_btn);
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", JavaScriptDelays);
+        Thread.sleep(500);
+
+    }
+    static public  void ScrollToFormFields(WebDriver driver) throws InterruptedException {
+        WebElement formfields=driver.findElement(formdields_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", formfields);
+        Thread.sleep(500);
+
+    }
+    static public void  ScrollToPopUp (WebDriver driver) throws InterruptedException {
+        WebElement Popup =driver.findElement(popup_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Popup);
+        Thread.sleep(500);
+
+    }
+    static public void  ScrollToSliders (WebDriver driver) throws InterruptedException {
+        WebElement Sliders =driver.findElement(slider_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Sliders);
+        Thread.sleep(500);
+
+    }
+    static public void  ScrollToCalenders (WebDriver driver) throws InterruptedException {
+        WebElement Calenders =driver.findElement(calender_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Calenders);
+        Thread.sleep(500);
+
+    }
+
+    static public void   ScrollToModals (WebDriver driver) throws InterruptedException {
+        WebElement Modals=driver.findElement(modals_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Modals);
+        Thread.sleep(500);
+
+    }
+
+*/
 }

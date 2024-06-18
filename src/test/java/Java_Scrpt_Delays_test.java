@@ -3,14 +3,15 @@ import Pages.JavadDlayPage;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class Java_Scrpt_Delays_test extends Base_test
 {
     @Test
     public void check_Delays_1() throws InterruptedException
     {
-        BasePage.Smallscrolldown(driver);
-        Thread.sleep(300);
+
+        //BasePage.ScrollToJavaScriptDelays(driver);
         BasePage.JavaScriptDelays(driver).click();
         JavadDlayPage.Start_Dlay_fn(driver).click();
         BasePage.Smallscrolldown(driver);
