@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 
 public class WindowOpertionPage
 {
-   static By newtab_btn= By.cssSelector("//button[@onclick=\"newTab()\"]");
-    static By replacewindow_btn=By.cssSelector("//button[@onclick=\"newWindowSelf()\"]");
-    static By newwindow_btn=By.cssSelector("//button[@onclick=\"newWindow()\"]");
+   static By newtab_btn= By.xpath("//button[@onclick=\"newTab()\"]");
+    static By replacewindow_btn=By.xpath("//button[@onclick=\"newWindowSelf()\"]");
+    static By newwindow_btn=By.xpath("//button[@onclick=\"newWindow()\"]");
 
     static public WebElement NewTab_BTN(WebDriver driver) throws InterruptedException {
         WebElement NewTab_BTN=driver.findElement(newtab_btn);
