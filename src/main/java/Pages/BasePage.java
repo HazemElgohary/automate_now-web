@@ -86,9 +86,10 @@ public class BasePage
         WebElement Hover=driver.findElement(hover_btn);
         return Hover ;
     }
-    static public  WebElement Ads (WebDriver driver)
-    {
+    static public  WebElement Ads (WebDriver driver) throws InterruptedException {
         WebElement Ads =driver.findElement(ads_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Ads);
+        Thread.sleep(500);
         return Ads;
     }
 //    static public  WebElement (WebDriver driver)
