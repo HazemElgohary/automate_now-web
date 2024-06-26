@@ -20,7 +20,7 @@ public class BasePage
     static By windowperation_btn =By.xpath("//a[@href=\"https://practice-automation.com/window-operations/\"]");
     static By hover_btn =By.xpath("//a[@href=\"https://practice-automation.com/hover/\"]");
     static By ads_btn =By.xpath("//a[@href=\"https://practice-automation.com/ads/\"]");
-    static By gesture_btn =By.xpath("");
+    static By gesture_btn =By.xpath("//a[@href=\"https://practice-automation.com/gestures/\"]");
     static By filedownload_btn =By.xpath("");
     static By clickevent_btn =By.xpath("");
     static By spinners_btn =By.xpath("");
@@ -91,6 +91,13 @@ public class BasePage
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Ads);
         Thread.sleep(500);
         return Ads;
+    }
+    static public  WebElement Gesture_BTN (WebDriver driver) throws InterruptedException
+    {
+        WebElement Gest =driver.findElement(gesture_btn);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);",Gest );
+        Thread.sleep(500);
+        return Gest;
     }
 //    static public  WebElement (WebDriver driver)
 //    {
