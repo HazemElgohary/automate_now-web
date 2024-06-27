@@ -15,8 +15,8 @@ import java.time.Duration;
 public class Gestures_test extends Base_test
 {
 
-    @Test
-    public void GesturesFn() throws InterruptedException
+    @Test (priority = 0)
+    public void gesturesFun() throws InterruptedException
     {
         Thread.sleep(1000);
         //BasePage.ScrollToSliders(driver);
@@ -37,14 +37,11 @@ public class Gestures_test extends Base_test
       //  Assert.assertEquals(value,"50");
 
     }
-    @Test
+    @Test(priority = 1)
     public void GesturesFn2() throws InterruptedException
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 
-        Thread.sleep(1000);
-        //BasePage.ScrollToSliders(driver);
-        BasePage.Gesture_BTN(driver).click();
         WebElement target=driver.findElement(By.id("div2"));
        String loc1= driver.findElement(By.id("div2")).getLocation().toString();
         String loc2= driver.findElement(By.id("div1")).getLocation().toString();
@@ -78,14 +75,11 @@ public class Gestures_test extends Base_test
         Thread.sleep(1000);
 
     }
-    @Test
+    @Test(priority = 2)
     public void GesturesFn3() throws InterruptedException
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(2));
 
-        Thread.sleep(1000);
-        //BasePage.ScrollToSliders(driver);
-        BasePage.Gesture_BTN(driver).click();
         Thread.sleep(3000);
 
         WebElement x= wait.until(ExpectedConditions.visibilityOf(GesturesPage.dragMab(driver)));
