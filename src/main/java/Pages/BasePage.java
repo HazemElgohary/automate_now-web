@@ -14,7 +14,6 @@ public class BasePage
     static By slider_btn =By.xpath("//a[@href=\"https://practice-automation.com/slider/\"]");
 
     static By calender_btn =By.xpath("//a[@href=\"https://practice-automation.com/calendars/\"]");
-
     static By modals_btn =By.xpath("//a[@href=\"https://practice-automation.com/modals/\"]");
     static By tables_btn =By.xpath("//a[@href=\"https://practice-automation.com/tables/\"]");
     static By windowperation_btn =By.xpath("//a[@href=\"https://practice-automation.com/window-operations/\"]");

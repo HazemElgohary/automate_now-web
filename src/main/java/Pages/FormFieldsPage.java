@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class FormFieldsPage
-{  static By name =By.id("name");
+{  static By name =By.id("name-input");
     static By drink1 =By.id("drink1");
     static By drink2 =By.id("drink2");
     static By drink3 =By.id("drink3");
@@ -13,7 +13,7 @@ public class FormFieldsPage
     static By drink5 =By.id("drink5");
     static By color4=By.id("color4");
 
-    static By siblings= By.name("siblings");
+    static By siblings= By.name("automation");
     static By option_drob=By.cssSelector("option[value=\"yes\"]");
     static By mail= By.id("email");
     static By message= By.name("message");
